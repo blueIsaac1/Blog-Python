@@ -66,7 +66,7 @@ Este projeto é uma API para gerenciar postagens, desenvolvida com FastAPI e Tor
 Para iniciar a aplicação, execute o seguinte comando:
 
 ```bash
-uvicorn port.fastapi.application:core_module --reload
+uvicorn port.fastapi.application:core_module --proxy-headers --host 0.0.0.0 --port 3000 --reload
 ```
 
 A API estará disponível em `http://127.0.0.0:3000`.
@@ -89,11 +89,3 @@ pytest
 
 - **test_connection_postgre.py**: Testa a conexão com o banco de dados PostgreSQL.
 - **test_connection_tortoise.py**: Testa a configuração do Tortoise ORM e a criação de um modelo de exemplo.
-
-## Contribuição
-
-Contribuições são bem-vindas! Sinta-se à vontade para abrir um problema ou enviar um pull request.
-
-## Licença
-
-Este projeto está licenciado sob a MIT License - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
