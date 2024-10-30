@@ -8,7 +8,7 @@ class PostTortoiseAdapter(BaseModel):
     model : dataT # type: ignore
 
     async def list(self):
-        return await self.model.all()
+        return await self.model.filter(status = PostStatus.PUBLISHED)
     
     async def create(self, post: Post):
         return await self.model.create(**post.dict())
