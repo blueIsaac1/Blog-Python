@@ -76,6 +76,7 @@ A API estará disponível em `http://127.0.0.0:3000`.
 - `GET /posts`: Lista todas as postagens.
 - `POST /posts`: Cria uma nova postagem.
 - `GET /posts/{post_id}`: Obtém uma postagem específica pelo ID.
+- `PUT /posts/{post_id}/publish`: Public uma postagem específica pelo ID.
 
 ## Testes
 
