@@ -88,4 +88,16 @@ pytest
 ### Testes de Conexão
 
 - **test_connection_postgre.py**: Testa a conexão com o banco de dados PostgreSQL.
+<<<<<<< HEAD
 - **test_connection_tortoise.py**: Testa a configuração do Tortoise ORM e a criação de um modelo de exemplo.
+=======
+- **test_connection_tortoise.py**: Testa a configuração do Tortoise ORM e a criação de um modelo de exemplo.
+
+## Contribuição
+
+Contribuições são bem-vindas! Sinta-se à vontade para abrir um problema ou enviar um pull request.
+
+## Licença
+
+Este projeto está licenciado sob a MIT License - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+>>>>>>> 56c9bb79712ff9fe1c630eb086a4b7b8bc4dfff4
