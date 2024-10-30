@@ -66,7 +66,7 @@ Este projeto é uma API para gerenciar postagens, desenvolvida com FastAPI e Tor
 Para iniciar a aplicação, execute o seguinte comando:
 
 ```bash
-uvicorn port.fastapi.application:core_module --reload
+uvicorn port.fastapi.application:core_module --proxy-headers --host 0.0.0.0 --port 3000 --reload
 ```
 
 A API estará disponível em `http://127.0.0.0:3000`.
