@@ -1,8 +1,8 @@
-from typing import Typevar
+from typing import TypeVar
 from pydantic import BaseModel
 from domain.entities.post import Post
 
-dataT = Typevar("DataT")
+dataT = TypeVar("DataT")
 
 class PostTortoiseAdapter(BaseModel):
     model : dataT # type: ignore

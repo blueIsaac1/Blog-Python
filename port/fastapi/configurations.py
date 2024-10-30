@@ -20,15 +20,4 @@ def configure_tortoise(application: FastAPI):
             ],
         }
     )
-
-TORTOISE_ORM = {
-    "connections": {"default": os.environ.get("DATABASE_URL")},
-    "apps": {
-        "models": {
-            "models": [
-                "adapter.schemas.post"
-            ],
-            "default_connection" : "default",
-        }
-    }
-}
+    
